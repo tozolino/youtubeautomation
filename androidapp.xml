@@ -2,7 +2,7 @@
 <suite name="Automation Testing">
     <test name="Smoke test">
    <classes>
-       <class name="Main"/>
+       <class name="AndroidSmokeTest"/>
    </classes>
 
     </test>

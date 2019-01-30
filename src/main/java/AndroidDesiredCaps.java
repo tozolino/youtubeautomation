@@ -1,7 +1,7 @@
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-public class Base {
+public class AndroidDesiredCaps {
 
 
     public DesiredCapabilities setupDesiredCapabilities(){

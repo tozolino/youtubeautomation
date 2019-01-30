@@ -7,14 +7,14 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 
-public class Main {
+public class AndroidSmokeTest {
 
-    Base base;
+    AndroidDesiredCaps base;
     AndroidDriver driver;
 
     @BeforeClass
     public void beforeClass() throws InterruptedException, MalformedURLException{
-        base = new Base();
+        base = new AndroidDesiredCaps();
         driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"), base.setupDesiredCapabilities());
     }
 
