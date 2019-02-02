@@ -22,6 +22,12 @@ public class IOSDesiredCaps {
         caps.setCapability("platformVersion", "12.1");
         caps.setCapability("automationName", AutomationName.IOS_XCUI_TEST);
         caps.setCapability("app", app.getAbsolutePath());
+        //CAPABILITIES BELOW NEEDED FOR iOS REAL DEVICE EXECUTION
+//        caps.setCapability("xcodeOrgId", "<Team IDxxxxxx>");
+//        caps.setCapability("xcodeSigningId", "iPhone Developer");
+//        caps.setCapability("udid", "xxxxx");
+//        caps.setCapability("updateWDABundleId", "xxxxxxx");
+
         IOSDriver<IOSElement> driver = new IOSDriver<IOSElement>(url, caps);
         return caps;
 
