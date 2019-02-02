@@ -2,7 +2,7 @@
 Native mobile automation testing framework PoC
 
 Stack:
-- Maven project
+- Maven
 - Appium
 - Java
 
