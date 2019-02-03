@@ -23,12 +23,12 @@ public class IOSSmokeTest {
         caps = new IOSDesiredCaps();
         driver = new IOSDriver<IOSElement>(url, caps.setupIOSDesirecCapabilities());
         params = new HashMap<String,Object>();
-        params.put("bundleId", "uxbae.MacAndCheese");
+        params.put("bundleId", "io.uxbae.AppiumMobileAutomation");
     }
 
     @Test
     public void testAppInstalled() throws InterruptedException {
-
+        Thread.sleep(3000);
         final boolean isInstalled = (Boolean)driver.executeScript("mobile: isAppInstalled", params);
         Assert.assertTrue(isInstalled);
     }
@@ -47,7 +47,7 @@ public class IOSSmokeTest {
 //    }
     @Test
     public void testAppUninstalled() {
-        driver.removeApp("uxbae.MacAndCheese");
+        driver.removeApp("io.uxbae.AppiumMobileAutomation");
         final boolean isInstalled = (Boolean)driver.executeScript("mobile: isAppInstalled", params);
         Assert.assertFalse(isInstalled);
     }
